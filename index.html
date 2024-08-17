@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <!-- <link rel="stylesheet" href="output.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    width: 80%;
+    height: 40px;
+  }
+  #container{
+    border-radius: 30px;
+    height: 20%;
+    margin-top: 10%;
+    padding: 70px 50px;
+  }
+  .input{
+    font-size: 20px;
+
+  }
+  h1{
+  padding: 20px 0;
+  }
+  a{
+    text-align: right;
+  }
+  h1{
+    font-size: 20px;
+  }
+ label{
+  text-align: left;
+  /* border: 2px solid black; */
+ }
+ .in{
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.674);
+  border-radius: 10px;
+  width: 90%;
+ }
+ #email:focus:invalid{
+  border-color: red;
+ }
+ .fa-solid{
+  margin-left: -40px;
+ }
+</style>
+</head>
+<body class="bg-yellow-100">
+  <div id="container" class="items-center rounded w-2/6 bg-center text-center border bg-white">
+    <h1 class="font-bold text-2xl">SIGN IN</h1>
+    <label class="input block" for="email"> <i class="fa-regular fa-envelope"></i> Email Address : <br>
+      <input id="email" class="in border" name="email" required type="email" placeholder=" ✉ Email">
+    </label>
+    <br>
+    <br>
+    <label class="input block" for="password"><i class="fa-solid fa-lock"></i> Email Password : <br>
+      <input class="in border" type="password" name="password" required placeholder="  password"><i class="fa-solid fa-eye-slash"></i>
+    </label>
+    <br>
+    <br>
+    <a href="#" class="text-blue-600 block right font-bold">Forgot Password</a>
+    <input class="inputbox inline right" type="checkbox"> Remember me
+    
+    <br> <br> <br>
+    <button type="submit" class="font-bold rounded border bg-blue-800 hover:bg-blue-500">Log In</button>
+  </div>
+  
+</body>
+</html>
